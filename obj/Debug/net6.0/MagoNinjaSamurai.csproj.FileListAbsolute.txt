@@ -1,0 +1,15 @@
+D:\Rodrigo\Bootcamp Sonda\C#-.Net\practicas\C#.Net\MagoNinjaSamurai\bin\Debug\net6.0\MagoNinjaSamurai.exe
+D:\Rodrigo\Bootcamp Sonda\C#-.Net\practicas\C#.Net\MagoNinjaSamurai\bin\Debug\net6.0\MagoNinjaSamurai.deps.json
+D:\Rodrigo\Bootcamp Sonda\C#-.Net\practicas\C#.Net\MagoNinjaSamurai\bin\Debug\net6.0\MagoNinjaSamurai.runtimeconfig.json
+D:\Rodrigo\Bootcamp Sonda\C#-.Net\practicas\C#.Net\MagoNinjaSamurai\bin\Debug\net6.0\MagoNinjaSamurai.dll
+D:\Rodrigo\Bootcamp Sonda\C#-.Net\practicas\C#.Net\MagoNinjaSamurai\bin\Debug\net6.0\MagoNinjaSamurai.pdb
+D:\Rodrigo\Bootcamp Sonda\C#-.Net\practicas\C#.Net\MagoNinjaSamurai\obj\Debug\net6.0\MagoNinjaSamurai.csproj.AssemblyReference.cache
+D:\Rodrigo\Bootcamp Sonda\C#-.Net\practicas\C#.Net\MagoNinjaSamurai\obj\Debug\net6.0\MagoNinjaSamurai.GeneratedMSBuildEditorConfig.editorconfig
+D:\Rodrigo\Bootcamp Sonda\C#-.Net\practicas\C#.Net\MagoNinjaSamurai\obj\Debug\net6.0\MagoNinjaSamurai.AssemblyInfoInputs.cache
+D:\Rodrigo\Bootcamp Sonda\C#-.Net\practicas\C#.Net\MagoNinjaSamurai\obj\Debug\net6.0\MagoNinjaSamurai.AssemblyInfo.cs
+D:\Rodrigo\Bootcamp Sonda\C#-.Net\practicas\C#.Net\MagoNinjaSamurai\obj\Debug\net6.0\MagoNinjaSamurai.csproj.CoreCompileInputs.cache
+D:\Rodrigo\Bootcamp Sonda\C#-.Net\practicas\C#.Net\MagoNinjaSamurai\obj\Debug\net6.0\MagoNinjaSamurai.dll
+D:\Rodrigo\Bootcamp Sonda\C#-.Net\practicas\C#.Net\MagoNinjaSamurai\obj\Debug\net6.0\refint\MagoNinjaSamurai.dll
+D:\Rodrigo\Bootcamp Sonda\C#-.Net\practicas\C#.Net\MagoNinjaSamurai\obj\Debug\net6.0\MagoNinjaSamurai.pdb
+D:\Rodrigo\Bootcamp Sonda\C#-.Net\practicas\C#.Net\MagoNinjaSamurai\obj\Debug\net6.0\MagoNinjaSamurai.genruntimeconfig.cache
+D:\Rodrigo\Bootcamp Sonda\C#-.Net\practicas\C#.Net\MagoNinjaSamurai\obj\Debug\net6.0\ref\MagoNinjaSamurai.dll
