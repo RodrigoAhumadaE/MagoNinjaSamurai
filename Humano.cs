@@ -26,4 +26,10 @@ class Humano{
     humanoAtacado.Salud -= daño;
     return daño;
   }
+
+  public void MostrarEstatus(){
+    Console.WriteLine("---------------------------");
+    Console.WriteLine($"{Nombre}\nFue: {Fuerza}\t\tInt: {Inteligencia}\nDes: {Destreza}\t\tSal: {Salud}");
+    Console.WriteLine("---------------------------");
+  }
 }

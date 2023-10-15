@@ -1,80 +1,67 @@
 ﻿using System.Diagnostics.Contracts;
 
 Mago mago = new Mago("Roderick");
-Console.WriteLine($"Mago {mago.Nombre}\nFuerza: {mago.Fuerza}\tIntel: {mago.Inteligencia}\nDest: {mago.Destreza}\t\tSalud: {mago.Salud}");
+Console.WriteLine($"Creado Personaje Mago {mago.Nombre}");
+mago.MostrarEstatus();
 
-Console.WriteLine("--------------------");
 Humano enemigo = new Humano("Marius");
-Console.WriteLine($"Enemigo {enemigo.Nombre}\nFuerza: {enemigo.Fuerza}\tIntel: {enemigo.Inteligencia}\nDest: {enemigo.Destreza}\t\tSalud: {enemigo.Salud}");
-int daño = mago.Atacar(enemigo);
-Console.WriteLine("--------------------");
-Console.WriteLine($"Mago {mago.Nombre} a atacado a {enemigo.Nombre} con Magia Astral - Daño {daño}");
-Console.WriteLine("--------------------");
-Console.WriteLine($"Mago {mago.Nombre}\nFuerza: {mago.Fuerza}\tIntel: {mago.Inteligencia}\nDest: {mago.Destreza}\t\tSalud: {mago.Salud}");
-Console.WriteLine("--------------------");
-Console.WriteLine($"Enemigo {enemigo.Nombre}\nFuerza: {enemigo.Fuerza}\tIntel: {enemigo.Inteligencia}\nDest: {enemigo.Destreza}\t\tSalud: {enemigo.Salud}");
+Console.WriteLine($"Creado Enemigo {enemigo.Nombre}");
+enemigo.MostrarEstatus();
 
-Console.WriteLine("--------------------");
+int daño = mago.Atacar(enemigo);
+Console.WriteLine($"Mago {mago.Nombre} a atacado a {enemigo.Nombre} con Magia Astral - Daño {daño}");
+enemigo.MostrarEstatus();
+Console.WriteLine($"Mago {mago.Nombre} a restaurado {daño} de Salud con habilidad extra de Magia Astral");
+mago.MostrarEstatus();
+
 Humano ayudante = new Humano("Tarzis");
-Console.WriteLine($"Ayudante {ayudante.Nombre}\nFuerza: {ayudante.Fuerza}\tIntel: {ayudante.Inteligencia}\nDest: {ayudante.Destreza}\t\tSalud: {ayudante.Salud}");
-Console.WriteLine("--------------------");
+Console.WriteLine($"Creado Ayudante {ayudante.Nombre}");
 mago.Curacion(ayudante);
+Console.WriteLine("---------------------------");
 Console.WriteLine($"Mago {mago.Nombre} a curado a {ayudante.Nombre} con Magia de Luz");
-Console.WriteLine("--------------------");
-Console.WriteLine($"Ayudante {ayudante.Nombre}\nFuerza: {ayudante.Fuerza}\tIntel: {ayudante.Inteligencia}\nDest: {ayudante.Destreza}\t\tSalud: {ayudante.Salud}");
-Console.WriteLine("--------------------");
+ayudante.MostrarEstatus();
 Ninja ninja = new Ninja("Hatori");
-Console.WriteLine($"Nija {ninja.Nombre}\nFuerza: {ninja.Fuerza}\tIntel: {ninja.Inteligencia}\nDest: {ninja.Destreza}\tSalud: {ninja.Salud}");
-Console.WriteLine("--------------------");
+Console.WriteLine($"Creado Personaje Ninja {ninja.Nombre}");
+ninja.MostrarEstatus();
+
 Humano enemigo2 = new Humano("Cole");
-Console.WriteLine($"Enemigo {enemigo2.Nombre}\nFuerza: {enemigo2.Fuerza}\tIntel: {enemigo2.Inteligencia}\nDest: {enemigo2.Destreza}\t\tSalud: {enemigo2.Salud}");
-Console.WriteLine("--------------------");
+Console.WriteLine($"Creado Enemigo {enemigo2.Nombre}");
+enemigo2.MostrarEstatus();
 daño = ninja.Atacar(enemigo2);
 Console.WriteLine($"Ninja {ninja.Nombre} a atacado a {enemigo2.Nombre} con ataque Sorpresa - Daño {daño}");
 if(daño == 85){
   Console.WriteLine("¡¡Daño Critico!!");
 }
-Console.WriteLine("--------------------");
-Console.WriteLine($"Enemigo {enemigo2.Nombre}\nFuerza: {enemigo2.Fuerza}\tIntel: {enemigo2.Inteligencia}\nDest: {enemigo2.Destreza}\t\tSalud: {enemigo2.Salud}");
-Console.WriteLine("--------------------");
+enemigo2.MostrarEstatus();
 ninja.Robar(enemigo2);
-Console.WriteLine($"Ninja {ninja.Nombre} a atacado a {enemigo2.Nombre} desde las Sombras");
-Console.WriteLine("--------------------");
-Console.WriteLine($"Enemigo {enemigo2.Nombre}\nFuerza: {enemigo2.Fuerza}\tIntel: {enemigo2.Inteligencia}\nDest: {enemigo2.Destreza}\t\tSalud: {enemigo2.Salud}");
-Console.WriteLine("--------------------");
-Console.WriteLine($"Nija {ninja.Nombre}\nFuerza: {ninja.Fuerza}\tIntel: {ninja.Inteligencia}\nDest: {ninja.Destreza}\tSalud: {ninja.Salud}");
-Console.WriteLine("--------------------");
+Console.WriteLine($"Ninja {ninja.Nombre} a atacado a {enemigo2.Nombre} desde las Sombras - Daño 5");
+enemigo2.MostrarEstatus();
+Console.WriteLine($"Ninja {ninja.Nombre} a restaurado 5 de Salud con habilidad extra de ataque desde las Sombras");
+ninja.MostrarEstatus();
 
 Samurai samurai = new Samurai("Musashi");
-Console.WriteLine($"Samurai {samurai.Nombre}\nFuerza: {samurai.Fuerza}\tIntel: {samurai.Inteligencia}\nDest: {samurai.Destreza}\t\tSalud: {samurai.Salud}");
-Console.WriteLine("--------------------");
+Console.WriteLine($"Creado Personaje Samurai {samurai.Nombre}");
+samurai.MostrarEstatus();
 Humano enemigo3 = new Humano("Dugt");
-Console.WriteLine($"Enemigo {enemigo3.Nombre}\nFuerza: {enemigo3.Fuerza}\tIntel: {enemigo3.Inteligencia}\nDest: {enemigo3.Destreza}\t\tSalud: {enemigo3.Salud}");
-Console.WriteLine("--------------------");
+Console.WriteLine($"Creado Enemigo {enemigo3.Nombre}");
+enemigo3.MostrarEstatus();
 daño = samurai.Atacar(enemigo3);
-Console.WriteLine($"Samurai {samurai.Nombre} a atacado a {enemigo3.Nombre} con ataque Sorpresa - Daño {daño}");
-Console.WriteLine("--------------------");
-Console.WriteLine($"Enemigo {enemigo3.Nombre}\nFuerza: {enemigo3.Fuerza}\tIntel: {enemigo3.Inteligencia}\nDest: {enemigo3.Destreza}\t\tSalud: {enemigo3.Salud}");
-Console.WriteLine("--------------------");
+Console.WriteLine($"Samurai {samurai.Nombre} a atacado a {enemigo3.Nombre} con ataque Espadas Dobles - Daño {daño}");
+enemigo3.MostrarEstatus();
 daño = ninja.Atacar(enemigo3);
 Console.WriteLine($"Ninja {ninja.Nombre} a atacado a {enemigo3.Nombre} con ataque Sorpresa - Daño {daño}");
 if(daño == 85){
   Console.WriteLine("¡¡Daño Critico!!");
 }
-Console.WriteLine("--------------------");
-Console.WriteLine($"Enemigo {enemigo3.Nombre}\nFuerza: {enemigo3.Fuerza}\tIntel: {enemigo3.Inteligencia}\nDest: {enemigo3.Destreza}\t\tSalud: {enemigo3.Salud}");
-Console.WriteLine("--------------------");
+Console.WriteLine("---------------------------");
+
 daño = samurai.Atacar(enemigo3);
-Console.WriteLine($"Samurai {samurai.Nombre} a atacado a {enemigo3.Nombre} con ataque Sorpresa - Daño {daño}");
-Console.WriteLine("--------------------");
-Console.WriteLine($"Enemigo {enemigo3.Nombre}\nFuerza: {enemigo3.Fuerza}\tIntel: {enemigo3.Inteligencia}\nDest: {enemigo3.Destreza}\t\tSalud: {enemigo3.Salud}");
-Console.WriteLine("--------------------");
+Console.WriteLine($"Samurai {samurai.Nombre} a atacado a {enemigo3.Nombre} con ataque Espadas Dobles - Daño {daño}");
+enemigo3.MostrarEstatus();
 
 samurai.Salud-= 115;
-Console.WriteLine($"Samurai {samurai.Nombre}\nFuerza: {samurai.Fuerza}\tIntel: {samurai.Inteligencia}\nDest: {samurai.Destreza}\t\tSalud: {samurai.Salud}");
-Console.WriteLine("--------------------");
+Console.WriteLine($"Samurai {samurai.Nombre} recibe 115 de daño");
+samurai.MostrarEstatus();
 int valor = samurai.Meditacion();
 Console.WriteLine($"Samurai {samurai.Nombre} a restaurado {valor} con Meditación");
-Console.WriteLine("--------------------");
-Console.WriteLine($"Samurai {samurai.Nombre}\nFuerza: {samurai.Fuerza}\tIntel: {samurai.Inteligencia}\nDest: {samurai.Destreza}\t\tSalud: {samurai.Salud}");
-Console.WriteLine("--------------------");
+samurai.MostrarEstatus();
